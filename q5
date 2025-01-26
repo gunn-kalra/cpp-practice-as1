@@ -1,0 +1,17 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+    int p,r,t,a;
+    cout<<"Enter principal";
+    cin>>p;
+    cout<<"Enter time";
+    cin>>t;
+    cout<<"Enter rate";
+    cin>>r;
+    int n;
+    cin>>n;
+    a=p*pow((1+r/n),(n*t));
+    cout<<"compound interest"<<a;
+    return 0;
+}
