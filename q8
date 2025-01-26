@@ -1,0 +1,14 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+    string n;
+    int a;
+    cout<<"Enter name";
+    cin>>n;
+    cout<<"Enter Age";
+    cin>>a;
+    cout<<"Hello"<<n<<"you are"<<a*365<<"days old";
+    
+    return 0;
+}
