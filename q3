@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    char ch;
+    cout<<"Enter 2 integers";
+    cin>>a>>b;
+    cout<<a<<b;
+    cout<<"enter your operator choice";
+    cin>>ch;
+    switch(ch)
+    {
+        case '+':
+        cout<<a+b;
+        break;
+        case '-':
+        cout<<a-b;
+        break;
+        case '*':
+        cout<<a*b;
+        break;
+        case '/':
+        cout<<a/b;
+        break;
+        default:
+        cout<<"Invalid choice";
+    }
+    return 0;
+}
