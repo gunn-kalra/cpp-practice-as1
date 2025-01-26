@@ -1,0 +1,13 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+   int a,b;
+   cin>>a>>b;
+   cout<<a<<b;
+   a=a+b;
+   b=a-b;
+   a=a-b;
+   cout<<"swapped numbers"<<a<<b;
+    return 0;
+}
