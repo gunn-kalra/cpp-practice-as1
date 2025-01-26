@@ -1,0 +1,36 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+    int balance,amount,ch;
+    balance=1000;
+        cout << "Choose an option";
+        cout << "1. Deposit\n";
+        cout << "2. Withdraw\n";
+        cout << "3. Balance Enquiry\n";
+        cout << "4. Exit\n";
+        while(ch!=4){
+        cin>>ch;
+        switch(ch){
+            case 1:
+            cout<<"Enter amount to be deposited";
+            cin>>amount;
+            break;
+            case 2:
+            cout<<"Enter amount to be withdraw";
+            cin>>amount;
+            if(amount>balance)
+            cout<<"insufficient balance";
+            break;
+            case 3:
+            cout<<"Current balance is"<<balance;
+            break;
+            case 4:
+            cout<<"exit";
+            break;
+            default:
+            cout<<"invalid choice";
+        }
+        }
+    return 0;
+}
