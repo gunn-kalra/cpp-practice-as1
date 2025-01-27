@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a=51;
+    while(true){
+    if(a%7==0){
+    cout<<a;
+    break;
+    }
+    a++;}
+    return 0;
+}
