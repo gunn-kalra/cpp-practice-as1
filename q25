@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+   cout<<"Enter 0 to exit\n";
+   int n,sum=0,count=0;
+  int min=0,max=0;
+   while(true){
+   cout<<"Enter the number\n";
+   cin>>n;
+   if(n==0)
+   break;
+   sum+=n;
+   count++;
+   if(n>max){
+   max=n;}
+   if(n<min){
+   min=n;}
+   }
+   cout<<"SUM IS "<<sum<<endl;
+   cout<<"Count is "<<count<<endl;
+   cout<<"Max value is "<<max<<endl;
+   cout<<"Min value is "<<min<<endl;
+return 0;
+}
