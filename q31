@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int num,c,rev=0;
+    cout<<"Enter a number to be reversed";
+    cin>>num;
+    int org=num;
+    while(num!=0){
+        c=num%10;
+        rev=rev*10+c;
+        
+        num=num/10;
+    }
+    if(rev==org){
+    cout<<"Number is palindrome";}
+    else
+    cout<<"Reversed number is"<<rev;
+    return 0;
+}
