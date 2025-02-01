@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int circularLeftShift(int num, int shift) {
+    int numBits = sizeof(num) * 8; // Get the number of bits in an integer
+
+    // Perform circular left shift
+    shift = shift % numBits; // Ensure shift is within the range of the number of bits
+    return (num << shift) | (num >> (numBits - shift));
+}
+int circularrighttShift(int num, int shift) {
+    int numBits = sizeof(num) * 8; // Get the number of bits in an integer
+
+    // Perform circular right shift
+    shift = shift % numBits; // Ensure shift is within the range of the number of bits
+    return (num >> shift) | (num << (numBits - shift));
+}
+int main() {
+    int num, shift;
+
+    cout << "Enter an integer: ";
+    cin >> num;
+    cout << "Enter the number of positions to shift: ";
+    cin >> shift;
+
+    int result = circularLeftShift(num, shift);
+    cout << "Result after circular left shift: " << result << endl;
+    int result2 = circularrighttShift(num, shift);
+    cout << "Result after circular right shift: " << result2 << endl;
+    return 0;
+}
