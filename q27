@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"Finding armstrong numbers from 100 to 500\n";
+    int org,c;
+    for(int i=100;i<=500;i++)
+    {
+     org=i;
+     int sum=0;
+     int temp=i;
+    while(temp>0)
+    {
+     c=temp%10;
+     sum+=c*c*c;
+     temp=temp/10;
+    }
+    if(sum==org)
+    cout<<org<<endl;
+    }
+    return 0;
+}
